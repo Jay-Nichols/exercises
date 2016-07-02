@@ -3,5 +3,4 @@
 $firstName = 'Jay';
 $lastName = 'Nichols';
 
-echo "Hello, my name is $firstName . $lastName";
-
+echo "Hello, my name is " . $firstName .  $lastName";
