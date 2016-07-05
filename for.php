@@ -12,3 +12,9 @@ if ($argc === 2) {
 	}
 
 }
+
+if ($argc === 1) {
+	for ($i = $firstNumber; $i <= $secondNumber; $i++) {
+		fwrite(STDOUT, "{$i}\n");
+	}
+}
