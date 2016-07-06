@@ -28,10 +28,10 @@ function multiply($a, $b) {
 }
 
 function divide($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
+	if (is_numeric($a) && is_numeric($b) && $b !== 0) {
 	    return $a / $b;		
 	} else {
-		return "Error. All variables must be numbers.\n";
+		return "Error. All variables must be numbers. \$b cannot be zero\n";
 	}
 }
 
