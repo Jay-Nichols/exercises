@@ -3,24 +3,36 @@
 $a = 6;
 $b = 10;
 
-function add($a, $b)
-{
-    return $a + $b;
+function add($a, $b) {
+	if (is_numeric($a) && is_numeric($b)) {
+    	return $a + $b;
+	} else {
+		return "Error. All variables must be numbers.\n";
+	}
 }
 
-function subtract($a, $b)
-{
-    return $a - $b;
+function subtract($a, $b) {
+	if (is_numeric($a) && is_numeric($b)) {
+	    return $a - $b;	
+	} else {
+		return "Error. All variables must be numbers.\n";
+	}
 }
 
-function multiply($a, $b)
-{
-    return $a * $b;
+function multiply($a, $b) {
+	if (is_numeric($a) && is_numeric($b)) {
+	    return $a * $b;
+	} else {
+		return "Error. All variables must be numbers.\n";
+	}
 }
 
-function divide($a, $b)
-{
-    return $a / $b;
+function divide($a, $b) {
+	if (is_numeric($a) && is_numeric($b)) {
+	    return $a / $b;		
+	} else {
+		return "Error. All variables must be numbers.\n";
+	}
 }
 
 // Add code to test your functions here
@@ -32,7 +44,11 @@ echo divide(3, 4) . PHP_EOL;
 
 
 function modulus($a, $b) {
-	return $a % $b;
+	if (is_numeric($a) && is_numeric($b)) {
+		return $a % $b;	
+	} else {
+		return "Error. All variables must be numbers.\n";
+	}
 }
 
 echo modulus(12, 5) . PHP_EOL;
