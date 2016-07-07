@@ -7,7 +7,7 @@ function add($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
     	return $a + $b;
 	} else {
-		return "Error. All variables must be numbers.\n";
+		return "Error. $a and $b are not valid numbers.\n";
 	}
 }
 
@@ -15,7 +15,7 @@ function subtract($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
 	    return $a - $b;	
 	} else {
-		return "Error. All variables must be numbers.\n";
+		return "Error. $a and $b are not valid numbers.\n";
 	}
 }
 
@@ -23,7 +23,7 @@ function multiply($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
 	    return $a * $b;
 	} else {
-		return "Error. All variables must be numbers.\n";
+		return "Error. $a and $b are not valid numbers.\n";
 	}
 }
 
@@ -31,7 +31,7 @@ function divide($a, $b) {
 	if (is_numeric($a) && is_numeric($b) && $b !== 0) {
 	    return $a / $b;		
 	} else {
-		return "Error. All variables must be numbers. \$b cannot be zero\n";
+		return "Error. $a and $b are not valid numbers. \$b cannot be zero\n";
 	}
 }
 
