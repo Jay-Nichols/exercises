@@ -12,5 +12,4 @@ foreach($things as $thing) {
 		echo "{$thing}\n";
 	}
 
-
 }
