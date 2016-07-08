@@ -45,8 +45,7 @@ $companies = [
     ]
 ];
 
-foreach($companies as &$name) {
-    asort($name);
-}
-    print_r($companies);
+arsort($companies);
+
+print_r($companies);
 
