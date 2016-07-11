@@ -1,6 +1,7 @@
 <?php
 
 function humanizedList($array) {
+	asort($array);
 	$lastItem = array_pop($array);
 	$lastItem = 'and ' . $lastItem;
 	array_push($array, $lastItem);
